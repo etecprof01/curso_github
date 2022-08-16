@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Exemplo de Botão que Roda Texto</title>
+<link rel="stylesheet" href="folhadeestilo.css" type="text/css" media="all">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<SCRIPT LANGUAGE="JavaScript">
+/*
+Tainan www.xadreztotal.cjb.net Buttons! v 1.0
+*/
+var outMsg = "";
+var i = 0;
+var lineNo = 1;
+var timerDM=null;
+var msg = " ";
+function araVob() {
+}
+var ScreenLine = new araVob();
+
+ScreenLine[1]  = "Olá!"
+ScreenLine[2]  = "Como Vai?"
+ScreenLine[3]  = "Esse Script é legal, né?"
+ScreenLine[4]  = "E nem é muito dificil de ser usado."
+ScreenLine[5]  = "é só olhar o código fonte da página que você vai conseguir visualizá-lo."
+ScreenLine[6]  = "Obrigado por ver o Script!"
+ScreenLine[7]  = "O que Achou?"
+ScreenLine[8]  = "Muito Bom!!"
+
+var msgNum = 1;
+var msgCnt = 8;
+var typeSpeed = 200;
+var pageLen = 4;
+var delay=typeSpeed;
+var r = 0;
+var cr="\r\n"
+if ("3" <=navigator.appVersion.charAt(0)) {
+ var cr="\n"
+}
+for (x = 1; x<=(msgCnt); x++) {
+  ScreenLine[x] = ScreenLine[x] + cr;
+}
+msg = ScreenLine[1];
+function DisplayMsg() {
+  if (msg.length <= i || msg.charAt(i) == "\f") {
+    r=i;
+    i=0;
+    ChangeMsg();
+  }
+  outMsg = outMsg + msg.charAt(i);
+  i++; 
+  if (msg.charAt(i) == "\f" || (lineNo == pageLen && i==msg.length)) {
+    delay = 4000; }
+  else {
+  if (msg.charAt(i) == cr && msg != " "+cr) {
+    delay = 2000; }
+  else {
+    delay = typeSpeed; } 
+  }
+  self.document.forms[0].elements[0].value=outMsg;
+  timerDM = setTimeout("DisplayMsg()",delay);
+}
+function ChangeMsg() {
+ msgNum++;
+ if (msgCnt < msgNum) {
+   msgNum = 1;
+ }
+ lineNo++;
+ if (pageLen < lineNo || msg.charAt(r) == "\f") {
+  outMsg=ScreenLine[msgNum].charAt(i);
+  i++;
+  lineNo = 1;
+ }
+  msg = ScreenLine[msgNum];
+}
+//  End -->
+</script>
+
+</head>
+
+<!-- Coloque esse texto no BODY  -->
+
+<body class="conteudo">
+<h1>Exemplo de Botão que Roda Texto</h1>
+<FORM NAME= "msgform" ACTION=""> 
+<input type="button" value="Clique aqui para ver" onClick="DisplayMsg()">
+	</FORM>
+</body>
+</html>

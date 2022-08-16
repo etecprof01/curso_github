@@ -1,0 +1,96 @@
+<html>
+<title>Exemplo de Calculadora: Tempo de Vida</title>
+<link rel="stylesheet" href="folhadeestilo.css" type="text/css" media="all">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<script language="JAVASCRIPT">
+
+<!-- 
+function lifetimer(){            
+        today = new Date()          
+        BirthDay = new Date(document.live.age.value)         
+        timeold = (today.getTime() - BirthDay.getTime());         
+        sectimeold = timeold / 1000;         
+        secondsold = Math.floor(sectimeold);         
+        msPerDay = 24 * 60 * 60 * 1000 ;         
+        timeold = (today.getTime() - BirthDay.getTime());         
+        e_daysold = timeold / msPerDay;         
+        daysold = Math.floor(e_daysold);         
+        e_hrsold = (e_daysold - daysold)*24;         
+        hrsold = Math.floor(e_hrsold);         
+        minsold = Math.floor((e_hrsold - hrsold)*60);           
+        document.live.time1.value = daysold              
+        document.live.time2.value = hrsold               
+        document.live.time3.value = minsold              
+        window.status = "Total de " + secondsold + "............ segundos de vida.";         
+        timerID = setTimeout("lifetimer()",1000)   
+}        
+// -- done hiding from old browsers -->
+
+</script>
+
+<body class="conteudo">
+<h1>Exemplo de Calculadora: Tempo de Vida</h1>
+<div align="left">
+
+<table border="0" width="84%" cellspacing="0" cellpadding="0">
+  <tr>
+
+    <td width="11%"></td>
+    <td width="86%" bgcolor="#ECFEFF"><form name="live">
+      <div align="center"><center><p><font color="#0000A0"><br>
+      <font size="4"><script language="JAVASCRIPT">
+
+<!--
+        var today = new Date()        
+        dayStr = today.toLocaleString();        
+        document.write("<b>Hoje: ");
+        document.write(dayStr);       
+        document.write("</b>");
+//--->
+
+</script> </font><br>
+      </font></p>
+      </center></div><hr width="80%">
+      <div align="center"><center><p><font face="Verdana" size="2" color="#0000A0"><strong>Escreva
+      sua data de nascimento (em Inglês):<input type="text" size="20" name="age"> <br>
+
+      Exemplo: august 26,1989 (essa é a minha data de nascimento). <br>
+      &nbsp; </strong></font></p>
+      </center></div><div align="center"><div align="center"><center><table border="0"
+      width="98%" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="15%" align="center"><strong><font face="Verdana" size="2" color="#0000A0">Você</font><font
+          face="Verdana" size="2" color="#ECFEFF">_</font><font face="Verdana" size="2"
+          color="#0000A0">tem:</font></strong></td>
+          <td width="19%" align="center"><font face="Verdana" size="2" color="#0000A0"><strong><input
+          type="text" size="7" name="time1"> dias, </strong></font></td>
+
+          <td width="25%" align="center"><strong><font face="Verdana" size="2" color="#0000A0"><input
+          type="text" size="7" name="time2"> horas</font><font face="Verdana" size="2"
+          color="#ECFEFF">_</font><font face="Verdana" size="2" color="#0000A0">e </font></strong></td>
+          <td width="42%" align="center"><strong><font face="Verdana" size="2" color="#0000A0"><input
+          type="text" size="8" name="time3"> minutos</font><font face="Verdana" size="2"
+          color="#ECFEFF">_</font><font face="Verdana" size="2" color="#0000A0">de</font><font
+          face="Verdana" size="2" color="#ECFEFF">_</font><font face="Verdana" size="2"
+          color="#0000A0">idade. </font></strong></td>
+        </tr>
+      </table>
+
+      </center></div><div align="center"><center><p><font face="Verdana" size="2"
+      color="#0000A0"><strong><input type="button" name="start" value="Tempo de vida"
+      onclick="lifetimer(this.form)"></strong></font></p>
+      </center></div><div align="center"><center><p><font face="Verdana" size="2"
+      color="#0000A0"><strong>Obs: Veja quantos segundos você já viveu na barra de status. </strong></font></p>
+      </center></div></div>
+    </form>
+    </td>
+  </tr>
+  <tr align="center">
+    <td width="14%"></td>
+
+    <td width="86%"></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

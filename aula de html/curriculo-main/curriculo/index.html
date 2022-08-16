@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--==Icones==-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+            <!--==CSS==-->
+            <link rel="stylesheet" href="css/style.css">
+            <title>Curriculo</title>
+        </head>
+        <body>
+            <!--==Header==-->
+            <header class="l-header" id="header">
+                <nav class="nav bd-container">
+                    <a href="#" class="nav__logo">Getulio</a>
+
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#home" class="nav__link">
+                                    <i class='bx bx-home nav__icon'></i>Home
+                                </a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#profile" class="nav__link">
+                                    <i class='bx bx-user nav__icon'></i>Perfil
+                                </a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#education" class="nav__link">
+                                    <i class='bx bx-book nav__icon'></i>Formações
+                                </a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#skills" class="nav__link">
+                                    <i class='bx bx-receipt nav__icon'></i>Habilidades
+                                </a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#experience" class="nav__link">
+                                    <i class='bx bx-briefcase-alt nav__icon'></i>Experiência Profissional
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </nav>
+            </header>
+            <main class="l-main bd-container">
+                <!-- Todos os elementos dessa DIV, é gerada em PDF -->
+                <div class="resume" id="area-cv">
+                    <div class="resume__left">
+                        <!--========== HOME ==========-->
+                        <section class="home" id="home">
+                            <div class="home__container section bd-grid">
+                                <div class="home__data bd-grid">
+                                    <img src="img/perfil.png" alt="" class="home__img">
+
+                                    <h1 class="home__title">GETULIO <b>SANTOS</b></h1>
+                                    <h3 class="home__profession">Analista de Sistemas</h3>
+
+                                    <div>
+                                        <a download="" href="curriculo.pdf" class="">Baixar PDF</a>
+                                    </div>
+                                </div>
+
+                                <div class="home__address bd-grid">
+                                    <span class="home__information">
+                                        <i class='bx bx-map home__icon' ></i> Cerro de Matheus Simões, xxx, Paranagua, São Paulo - SP
+                                    </span>
+                                    <span class="home__information">
+                                        <i class='bx bx-envelope home__icon' ></i> Tuliosantos.ts07@gmail.com
+                                    </span>
+                                    <span class="home__information">
+                                        <i class='bx bx-phone home__icon' ></i> (11)95941-0021
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Botão para trocar de tema -->
+                            <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+    
+                            <!-- Botão para gerar e baixar PDF -->
+                            <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button" ></i>
+
+                        </section>          
+            
+                        <!--========== SOCIAL ==========-->
+                        <section class="social section">
+                           <h2 class="section-title">Redes Sociais</h2>
+                           <div class="social__container bd-grid">
+                               <a href="http://www.linkedin.com/in/tulio-santos-ts" target="_blank" class="social__link">
+                                <i class='bx bxl-linkedin-square social__icon' ></i> @tulio-santos-ts
+                               </a>
+                               <a href="" target="_blank" class="social__link">
+                                <i class='bx bxl-facebook social__icon' ></i> Tuliosantos
+                               </a>
+                               <a href="https://github.com/" target="_blank" class="social__link">
+                                <i class='bx bxl-github social__icon' ></i></i> /Tuliosantos
+                               </a>
+                           </div>
+                        </section>
+
+                        <!--========== PERFIL ==========-->
+                        <section class="profile section" id="profile">
+                            <h2 class="section-title">Perfil</h2>
+                            <p class="profile__description">Atuando na área de TI tive a 
+                                oportunidade de trabalhar em 
+                                várias esferas, como o suporte 
+                                técnico, administração de 
+                                servidores, redes, banco de dados e 
+                                virtualização, processos, além de 
+                                poder atuar com gestão deprojetos, 
+                                governança e melhoria de processos 
+                                para a continuidade dos serviços de 
+                                TI.</p>
+                        </section>
+                    
+                        <!--========== FORMACAO ==========-->
+                        <section class="education section" id="education">
+                            <h2 class="section-title">Formação</h2>
+                            <div class="education__container bd-grid">
+                                <div class="education__content">
+                                    <div class="education__time">
+                                        <span class="education__rounder"></span>
+                                        <span class="education__line"></span>
+                                    </div>
+
+                                    <div class="education__data bd-grid">
+                                        <h3 class="education__title">Ensino Médio</h3>
+                                        <span class="education__studies">Etce Zona Leste</span>
+                                        <span class="education__year">2004 - 2006</span>
+                                    </div>
+                                </div>
+
+                                <div class="education__content">
+                                    <div class="education__time">
+                                        <span class="education__rounder"></span>
+                                        <span class="education__line"></span>
+                                    </div>
+
+                                    <div class="education__data bd-grid">
+                                        <h3 class="education__title">Superior - Análise e Desenvolvimento de sistemas (Cursando)</h3>
+                                        <span class="education__studies">Faculdade Drummond</span>
+                                        <span class="education__year">2008 - 2010</span>
+                                    </div>
+                                </div>
+
+                                <div class="education__content">
+                                    <div class="education__time">
+                                        <span class="education__rounder"></span>
+                                        <span class="education__line"></span>
+                                    </div>
+
+                                    <div class="education__data bd-grid">
+                                        <h3 class="education__title">Matematica</h3>
+                                        <span class="education__studies">Instituto Alvorada Plus</span>
+                                        <span class="education__year">2012 - 2013</span>
+
+                                    </div>
+                                </div>
+
+                                <div class="education__content">
+                                    <div class="education__time">
+                                        <span class="education__rounder"></span>
+                                        <!--<span class="education__line"></span>-->
+                                    </div>
+
+                                    <div class="education__data bd-grid">
+                                        <h3 class="education__title">Técnico - Universo Photoshop (Adobe Photoshop Completo)</h3>
+                                        <span class="education__studies">Brainstorm Academy</span>
+                                        <span class="education__year">2021 - 2022</span>
+                                        <span class="education__time">29.3 Horas no total</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="resume__right">
+                                                <!--========== HABILIDADES  ==========-->
+                                                <section class="skills section" id="skills">
+                                                    <h2 class="section-title">Habilidades</h2>
+                        
+                                                    <div class="skills__content bd-grid">
+                                                        <ui class="skills__data">Web Design
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Estrutura HTML
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Estilos CSS
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>JavaScript
+                                                            </li>
+                                                        </ui>
+                        
+                                                        <ui class="skills__data">Linguagens de Programação - Desktop
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>C
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>C#
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Python
+                                                            </li>
+                                                        </ui>
+                        
+                                                        <ui class="skills__data">Frameworks / IDEs
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Microsoft Visual Studio 
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Visual Studio Code
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>PyCharm
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>CodeBlocks
+                                                            </li>
+                                                        </ui>
+                        
+                                                        <ui class="skills__data">Pacote Office
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Word - Avançado
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Excel - Avançado
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>PowerPoint - Avançado
+                                                            </li>
+                                                        </ui>
+                        
+                                                        <ui class="skills__data">Computação Gráfica
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Adobe Photoshop - Avançado
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Gimp - Avançado
+                                                            </li>
+                                                        </ui>
+                                                    </div>
+                                                </section>
+                        <!--========== EXPERIENCIA ==========-->
+                        <section class="experience section" id="experience">
+                            <h2 class="section-title">Experiência Profissional</h2>
+                            <div class="experience__container bd-grid">
+                                <div class="experience__content">
+                                    <div class="experience__time">
+                                        <span class="experience__rounder"></span>
+                                        <span class="experience__line"></span>
+                                    </div>
+
+                                    <div class="experience__data bd-grid">
+                                        <h3 class="experience__title"> Professor de Desenvolvimento de Sistemas</h3>
+                                        <span class="experience__company">2012 até o momento | Faculdade Anhanguera</span>
+                                        <p class="experience__description">Atividades: Atuo lecionando Desenho De Soluções Web, 
+                                            Windows Desktop Com .NET C# Usando Mvc e Entity 
+                                            Framework. Soluções Para Mobile com Cordova, Flutter 
+                                            (Android e IOS), Servidores Linux, Java e Visual Basic 
+                                            Utilizando Banco De Dados Mysql/SQL Server. Visual 
+                                            Studio, SQL Server, MS-Access, Vb6, Vba, C#, T Sql, Php, 
+                                            Html5, Css3, Xml, Javascript, Jquery, Bootstrap, 
+                                            AngularJS e básico ReactJS . Usando Git como 
+                                            versionamento.</p>
+                                    </div>
+                                </div>
+                                <div class="experience__content">
+                                        <div class="experience__time">
+                                            <span class="experience__rounder"></span>
+                                            <span class="experience__line"></span>
+                                        </div>
+    
+                                        <div class="experience__data bd-grid">
+                                            <h3 class="experience__title">Professor de Analises de Sistemas</h3>
+                                            <span class="experience__company">2012 à Atual | CentroPaulaSouza</span>
+                                            <p class="experience__description">Atividades: Atuo lecionando Manutenção e instalação e 
+                                                configuração de Redes, instalação e Configuração de 
+                                                Roteadores Cisco, Crimpagem de Cabos CAT5, CAT6, 
+                                                Windows Server 2010, instalação e configuração do AD 
+                                                entre outras ferramentas do servidor, Linux e Servidor 
+                                                SAMBA, Ministrar aulas avançada do Pacote 
+                                                office.
+                                                .</p>
+                                        </div>
+                                </div>            
+                                <div class="experience__content">
+                                    <div class="experience__time">
+                                        <span class="experience__rounder"></span>
+                                        <!--<span class="experience__line"></span>-->
+                                    </div>
+        
+                                    <div class="experience__data bd-grid">
+                                        <h3 class="experience__title">Administrador de redes</h3>
+                                        <span class="experience__company">2008 à 2016 | Exército Brasileiro</span>
+                                        <p class="experience__description"> Atividades: Atuei como 
+                                            administrador de redes, Sysadmin Linux e Supervisor de 
+                                            Serviços de TI, com o objetivo de supervisionar as 
+                                            atividades para a continuidade dos serviços de sistema 
+                                            de informação de interesse do Exército Brasileiro e 
+                                            desenvolvendo atividades em
+                                            projetos para instalação configuração, manutenção de 
+                                            Redes, Servidores, Banco de Dados, Backup e Telefonia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <!--<span class="experience__line"></span>-->
+                                </div>
+    
+                                <div class="experience__content">
+                                    <div class="experience__time">
+                                        <span class="experience__rounder"></span>
+                                        <span class="experience__line"></span>
+                                    </div>
+
+                                    <div class="experience__data bd-grid">
+                                        <h3 class="experience__title">Analista de Banco de Dados </h3>
+                                        <span class="experience__company">2007 à 2008 | BK Consultoria</span>
+                                        <p class="experience__description">Atividades: Atuo lecionando Manutenção e instalação e 
+                                            configuração de Redes, instalação e Configuração de 
+                                            Roteadores Cisco, Crimpagem de Cabos CAT5, CAT6, 
+                                            Windows Server 2010, instalação e configuração do AD 
+                                            entre outras ferramentas do servidor, Linux e Servidor 
+                                            SAMBA, Ministrar aulas avançada do Pacote 
+                                            office.
+                                            .</p>
+                                    </div>
+                            </div>            
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <!--<span class="experience__line"></span>-->
+                                </div>
+                        </div>
+                        </section>
+                        <!--========== LANGUAGES ==========-->
+                        <section class="languages section">
+                            <h2 class="section-title">Linguagens</h2>
+
+                            <div class="languages__container">
+                                <ul class="language__content bd-grid">
+                                    <li class="languages__name">
+                                        <span class="languages__circle"></span> Inglês
+                                        <p class="language__description">Leitura avançada, escrita intermediaria e comunicação básica</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!--========== INTERESSES ==========-->
+                        <section class="interests section">
+                            <h2 class="section-title">Interesses Pessoais</h2>
+                            <div class="interests__container bd-grid">
+                                <div class="interests__content">
+                                    <i class='bx bx-headphone interests__icon' ></i>
+                                    <span class="interests__name">Escutar, apreciar <br>e cantar música</span>
+                                </div>
+
+                                <div class="interests__content">
+                                    <i class='bx bx-palette interests__icon' ></i>
+                                    <span class="interests__name">Ver e reproduzir <br>arte digital</span>
+                                </div>
+
+                                <div class="interests__content">
+                                    <i class='bx bx-joystick interests__icon' ></i>
+                                    <span class="interests__name">Jogos de vídeogame <br>ou de mesa</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+            </div>
+            </main>
+            <!--==Scroll Top==-->
+            <a href="#" class="scrolltop" id="scroll-top">
+                <i class='bx bx-up-arrow-alt scrolltop_icon' ></i>
+            </a>
+
+            <!--==HTML2PDF==-->
+            <script src="js/html2pdf.bundle.min.js"></script>
+            <!--==Main JS==-->
+            <script src="js/main.js"></script>
+        </body>
+    </html>

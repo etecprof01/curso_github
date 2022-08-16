@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--==Icones==-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+            <!--==CSS==-->
+            <link rel="stylesheet" href="curriculo/css/style.css">
+            <title>Curriculo</title>
+        </head>
+        <body>
+            <!--==Header==-->
+            <header class="l-header" id="header">
+                <nav class="nav bd-container">
+                    <a href="#" class="nav__logo">Altair</a>
+
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#home" class="nav__link">
+                                    <i class='bx bx-home nav__icon'></i>Home
+                                </a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#profile" class="nav__link">
+                                    <i class='bx bx-user nav__icon'></i>Perfil
+                                </a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#education" class="nav__link">
+                                    <i class='bx bx-book nav__icon'></i>Formações
+                                </a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#skills" class="nav__link">
+                                    <i class='bx bx-receipt nav__icon'></i>Habilidades
+                                </a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a href="#experience" class="nav__link">
+                                    <i class='bx bx-briefcase-alt nav__icon'></i>Experiência Profissional
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </nav>
+            </header>
+            <main class="l-main bd-container">
+                <!-- Todos os elementos dessa DIV, é gerada em PDF -->
+                <div class="resume" id="area-cv">
+                    <div class="resume__left">
+                        <!--========== HOME ==========-->
+                        <section class="home" id="home">
+                            <div class="home__container section bd-grid">
+                                <div class="home__data bd-grid">
+                                    <img src="curriculo/img/perfil.png" alt="" class="home__img">
+
+                                    <h1 class="home__title">ALTAIR <b>NOBERTO</b></h1>
+                                    <h3 class="home__profession">Designer Vetorial</h3>
+
+                                    <div>
+                                        <a download="" href="pdf/Curriculo.pdf" class="home__button-movil">Baixar PDF</a>
+                                    </div>
+                                </div>
+
+                                <div class="home__address bd-grid">
+                                    <span class="home__information">
+                                        <i class='bx bx-map home__icon' ></i> Estrada Das Palmas, 1401, Metalúrgicos, Osasco - SP
+                                    </span>
+                                    <span class="home__information">
+                                        <i class='bx bx-envelope home__icon' ></i> altairnoberto@outlook.com.br
+                                    </span>
+                                    <span class="home__information">
+                                        <i class='bx bx-phone home__icon' ></i> (11)99197-3628
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Botão para trocar de tema -->
+                            <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+    
+                            <!-- Botão para gerar e baixar PDF -->
+                            <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button" ></i>
+
+                        </section>          
+            
+                        <!--========== SOCIAL ==========-->
+                        <section class="social section">
+                           <h2 class="section-title">Redes Sociais</h2>
+                           <div class="social__container bd-grid">
+                               <a href="https://www.linkedin.com/in/altair-noberto-68b19018a" target="_blank" class="social__link">
+                                <i class='bx bxl-linkedin-square social__icon' ></i> @Altair
+                               </a>
+                               <a href="https://www.facebook.com/fautista" target="_blank" class="social__link">
+                                <i class='bx bxl-facebook social__icon' ></i> Altair Noberto Silva
+                               </a>
+                               <a href="https://github.com/RavenousII" target="_blank" class="social__link">
+                                <i class='bx bxl-github social__icon' ></i></i> /RavenousII
+                               </a>
+                           </div>
+                        </section>
+
+                        <!--========== PERFIL ==========-->
+                        <section class="profile section" id="profile">
+                            <h2 class="section-title">Perfil</h2>
+                            <p class="profile__description">Formado em analise de sistemas, atualmente atuo como Operador de computação gráfica, estudante Web Design, e trabalho com edição, manipulação e tratamento de imagens</p>
+                        </section>
+                    
+                        <!--========== FORMACAO ==========-->
+                        <section class="education section" id="education">
+                            <h2 class="section-title">Formação</h2>
+                            <div class="education__container bd-grid">
+                                <div class="education__content">
+                                    <div class="education__time">
+                                        <span class="education__rounder"></span>
+                                        <span class="education__line"></span>
+                                    </div>
+
+                                    <div class="education__data bd-grid">
+                                        <h3 class="education__title">Ensino Médio</h3>
+                                        <span class="education__studies">Jardim Santa Maria III</span>
+                                        <span class="education__year">2016 - 2018</span>
+                                    </div>
+                                </div>
+
+                                <div class="education__content">
+                                    <div class="education__time">
+                                        <span class="education__rounder"></span>
+                                        <span class="education__line"></span>
+                                    </div>
+
+                                    <div class="education__data bd-grid">
+                                        <h3 class="education__title">Superior - Análise e Desenvolvimento de sistemas (Cursando)</h3>
+                                        <span class="education__studies">Universidade Paulista</span>
+                                        <span class="education__year">2019 - 2022</span>
+                                    </div>
+                                </div>
+
+                                <div class="education__content">
+                                    <div class="education__time">
+                                        <span class="education__rounder"></span>
+                                        <span class="education__line"></span>
+                                    </div>
+
+                                    <div class="education__data bd-grid">
+                                        <h3 class="education__title">Técnico - Web Design Completo: HTML5, CSS3 e JS</h3>
+                                        <span class="education__studies">Udemy</span>
+                                        <span class="education__year">2021 - 2022</span>
+                                        <span class="education__time">54.5 Horas no total</span>
+                                    </div>
+                                </div>
+
+                                <div class="education__content">
+                                    <div class="education__time">
+                                        <span class="education__rounder"></span>
+                                        <!--<span class="education__line"></span>-->
+                                    </div>
+
+                                    <div class="education__data bd-grid">
+                                        <h3 class="education__title">Técnico - Universo Photoshop (Adobe Photoshop Completo)</h3>
+                                        <span class="education__studies">Brainstorm Academy</span>
+                                        <span class="education__year">2021 - 2022</span>
+                                        <span class="education__time">29.3 Horas no total</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="resume__right">
+                                                <!--========== HABILIDADES  ==========-->
+                                                <section class="skills section" id="skills">
+                                                    <h2 class="section-title">Habilidades</h2>
+                        
+                                                    <div class="skills__content bd-grid">
+                                                        <ui class="skills__data">Web Design
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Estrutura HTML
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Estilos CSS
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>JavaScript
+                                                            </li>
+                                                        </ui>
+                        
+                                                        <ui class="skills__data">Linguagens de Programação - Desktop
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>C
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>C#
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Python
+                                                            </li>
+                                                        </ui>
+                        
+                                                        <ui class="skills__data">Frameworks / IDEs
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Microsoft Visual Studio 
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Visual Studio Code
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>PyCharm
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>CodeBlocks
+                                                            </li>
+                                                        </ui>
+                        
+                                                        <ui class="skills__data">Pacote Office
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Word - Avançado
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Excel - Avançado
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>PowerPoint - Intermediario
+                                                            </li>
+                                                        </ui>
+                        
+                                                        <ui class="skills__data">Computação Gráfica
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Adobe Photoshop - Avançado
+                                                            </li>
+                                                            <li class="skills__name">
+                                                                <span class="skills__circle"></span>Gimp - Avançado
+                                                            </li>
+                                                        </ui>
+                                                    </div>
+                                                </section>
+                        <!--========== EXPERIENCIA ==========-->
+                        <section class="experience section" id="experience">
+                            <h2 class="section-title">Experiência Profissional</h2>
+                            <div class="experience__container bd-grid">
+                                <div class="experience__content">
+                                    <div class="experience__time">
+                                        <span class="experience__rounder"></span>
+                                        <span class="experience__line"></span>
+                                    </div>
+
+                                    <div class="experience__data bd-grid">
+                                        <h3 class="experience__title">Estágiario - Fórum de Osasco</h3>
+                                        <span class="experience__company">1 Ano | Tribunal de Justiça do Estado de São Paulo</span>
+                                        <p class="experience__description">Atendimento ao público, auxiliar na entrada de impressão e criação de documentos diversos, pesquisa e organização de processos através de fichários.</p>
+                                    </div>
+                                </div>
+                                <div class="experience__content">
+                                        <div class="experience__time">
+                                            <span class="experience__rounder"></span>
+                                            <span class="experience__line"></span>
+                                        </div>
+    
+                                        <div class="experience__data bd-grid">
+                                            <h3 class="experience__title">Estágiario - Diagramador</h3>
+                                            <span class="experience__company">9 Meses | Universidade Paulista</span>
+                                            <p class="experience__description">Inserção e adaptação de textos e imagens para websites, inserção de conteúdo online para plataformas digitais, tratamento de imagens no Adobe Photoshop, tratamento e estruturação de textos para HTML.</p>
+                                        </div>
+                                </div>            
+                                <div class="experience__content">
+                                    <div class="experience__time">
+                                        <span class="experience__rounder"></span>
+                                        <!--<span class="experience__line"></span>-->
+                                    </div>
+        
+                                    <div class="experience__data bd-grid">
+                                        <h3 class="experience__title">Auxiliar de Coordenação</h3>
+                                        <span class="experience__company">1 Ano | Universidade Paulista</span>
+                                        <p class="experience__description">Inserção e padronização de disciplinas para plataforma EAD, atendimento ao público online, tratamento de imagens para inserção na plataforma digital EAD, inserção de conteúdos em HTML/CSS, criação de planilhas online com Excel, criação de formulários, tabelas e fichas em estrutura HTML5.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--========== LANGUAGES ==========-->
+                        <section class="languages section">
+                            <h2 class="section-title">Linguagens</h2>
+
+                            <div class="languages__container">
+                                <ul class="language__content bd-grid">
+                                    <li class="languages__name">
+                                        <span class="languages__circle"></span> Inglês
+                                        <p class="language__description">Leitura avançada, escrita intermediaria e comunicação básica</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!--========== INTERESSES ==========-->
+                        <section class="interests section">
+                            <h2 class="section-title">Interesses Pessoais</h2>
+                            <div class="interests__container bd-grid">
+                                <div class="interests__content">
+                                    <i class='bx bx-headphone interests__icon' ></i>
+                                    <span class="interests__name">Escutar, apreciar <br>e cantar música</span>
+                                </div>
+
+                                <div class="interests__content">
+                                    <i class='bx bx-palette interests__icon' ></i>
+                                    <span class="interests__name">Ver e reproduzir <br>arte digital</span>
+                                </div>
+
+                                <div class="interests__content">
+                                    <i class='bx bx-joystick interests__icon' ></i>
+                                    <span class="interests__name">Jogos de vídeogame <br>ou de mesa</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+            </div>
+            </main>
+            <!--==Scroll Top==-->
+            <a href="#" class="scrolltop" id="scroll-top">
+                <i class='bx bx-up-arrow-alt scrolltop_icon' ></i>
+            </a>
+
+            <!--==HTML2PDF==-->
+            <script src="curriculo/js/html2pdf.bundle.min.js"></script>
+            <!--==Main JS==-->
+            <script src="curriculo/js/main.js"></script>
+        </body>
+    </html>

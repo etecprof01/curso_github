@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Confeitaria Maria Chocolate</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	<script src="pratica11exercicio01.js"></script>
+	<header>
+		<div class="logoImg">
+			<img src="imagens/logo.png" alt="Maria Chocolate" height="100" />
+		</div>
+
+		<div class="titulo">
+			<h1>Confeitando para a alegria da sua vida...</h1>
+		</div>
+
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html" >Home</a></li>
+			<li><a href="bolos.html" >Bolos</a></li>
+			<li><a href="tortas.html" >Tortas</a></li>
+			<li><a href="festas.html" >Festas</a></li>
+			<li><a href="contatos.html" >Contatos</a></li>			
+		</ul>
+
+	</nav>
+	
+	<section>
+		<div class="container">
+			<form name="f_form" method="post" action="">
+				<div class="div1">
+					<label class="rotuloA">Nome:</label> <input class="campo" name="f_nome" type="text" size="38" maxlength="38" /><br/><br/>
+					<label class="rotuloB">E-mail:</label> <input class="campo" name="f_mail" type="email" size="38" maxlength="38" placeholder="email@mail.com" /><br><br/>
+				</div>
+				<div class="div2">
+					<label class="rotulo">Tipo do Contato:</label>
+					<select class="campoSelect" name="f_tipoContato">
+						<option value="opt_elogio">Elogio</option>
+						<option value="opt_sugestoes">Sugestões</option>
+						<option value="opt_reclamacoes">Reclamações</option>
+						<option value="opt_outros">Outros</option>
+					</select><br/><br/>
+				</div>
+				<div class="div3">
+					<label class="rotuloC">Mensagem:</label>
+					<textarea class="campoMens" name="f_mensagem" cols="29" rows="5"></textarea><br/><br/><br/><br/><br/><br/><br/>
+				</div>
+				<div class="div4">
+					<input class="campoCheck" name="f_queroMens" type="checkbox" value="queroMens" />
+					<label class="rotulo">Quero receber mensagens deliciosas...</label><br/><br/>
+				</div>
+				<div class="div5">
+					<br/><br/><input class="btn" name="f_btn" type="submit" value="Enviar" onclick="return validar()" />
+				</div>
+				
+			</form>
+		</div>
+
+		
+
+	</section>
+	<footer>
+		<p>Desenvolvido como exercício da disciplina Fundamentos de Desenvolvimento Web. ©Copyright 2022. Todos os Direitos Reservados.</p>
+	</footer>
+
+
+</body>
+</html>
